@@ -1,0 +1,216 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*Seccion de navegacion*/
+
+#navbar {
+    width: 100vw;
+    height: 100vh;
+    background: url(./imagen/imagen\ home.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+#navbar::before{  /*efecto negro transparente a la imagen*/
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#titulo {
+    padding-top: 150px;
+    z-index: 1000 !important;
+    font-size: 30px;
+    font-weight: 200;
+}
+#titulo h1{
+    font-size: 50px;
+    z-index: 100;
+}
+#titulo p, span{
+    z-index: 100;
+    font-size: 55px;
+}
+.contenedor-redes {
+    z-index: 200;
+    padding-top: 20px;
+    font-size: 17px;
+}
+.contenedor-redes a {
+    margin: 15px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 8px;
+    transition: 1s;
+}
+.instagram:hover{
+    background: #D32F2F;
+    
+}
+.linkedin:hover {
+    background: #0e76a8;
+}
+.github:hover {
+    background: #171515;
+}
+
+
+/*Seccion de sobre mi*/
+#contenedor_img_yo{
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+#imagen{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #F5F5F5;
+}
+#contenedor_sobre_mi {
+    height: 100%;
+    padding-top: 6.5rem !important;
+    background: #FAFAFA;
+}
+#columna2{
+    padding-top: 3rem;
+}
+
+/*Seccion de proyectos*/
+#contenedor_proyectos {
+    background: #F2F3F4;
+    height: 100%;
+}
+
+#titulo-proyectos {
+    padding: 90px;
+}
+#titulo-proyectos h2 {
+    font-size: 44px;
+}
+
+/*Seccion de Habilidades*/
+#contenedor_habilidades {
+    height: 100%;
+    background: #FBFCFC;
+}
+#habilidades-padding{
+    padding-top: 25px;
+    padding-bottom: 80px;
+}
+
+/*Seccion de Contacto*/
+#contenedor_contacto {
+    background: #F0F3F4;
+    height: 100vh;
+}
+
+
+#formulario a {
+    text-align: center;
+    padding-right: 20px;
+    transition: 1s;
+}
+#formulario a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/*Seccion de Footer*/
+#contenedor_footer {
+    display: flex;
+    background: #17202A;
+    height: 70px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px){
+    #navbarSupportedContent {
+        color: #fff;
+        background: #fff;
+    }
+    #contenedor_nav {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    #navbar {
+        padding: 0;
+        margin: 0;
+    }
+    #menu {  /*id para en icono de menu hamburguesa*/
+        color: #fff;
+    }
+    #columna2 {
+        padding: 1.5rem;
+    }
+    #formulario {
+        padding: 0;
+    }
+     #titulo p, span{
+        z-index: 100;
+        font-size: 35px;
+    }
+    #titulo h1{
+        font-size: 35px;
+        z-index: 100;
+    }
+}
+
+@media (min-width: 993px){
+    #contenedor_img_yo{
+        height: 90vh;
+        padding: 15px;
+    }
+    #imagen{
+        width: 100%;
+        height: 460px;
+    }
+    #columna2 {
+       width: 60% !important;
+       padding-top: 0;
+    }
+    .botones {
+        padding-top: 230px;
+     }
+     #formulario {
+        padding-left: 120px !important;
+        padding-right: 120px !important;
+     }
+}
+
+
+@media (max-width: 993px){
+    .botones {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    #boton { /*id para desapareser el boton en pantallas mas grandes*/
+        display: none;
+    }
+    #navbarSupportedContent ul li a { /*id para colocar el texto del menu en blaco en pantallas mas grandes*/
+        color: #fff;
+        font-weight: 300;
+        padding: 0 18px 0 18px;
+    }
+    #formulario {
+        padding: 0;
+     }
+}
